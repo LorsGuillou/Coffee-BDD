@@ -1,0 +1,15 @@
+{
+    "name": "kercode/bddr",
+    "autoload": {
+        "psr-4": {
+            "Kercode\\Bddr\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Laurent Guillou",
+            "email": "laurent29190@hotmail.fr"
+        }
+    ],
+    "require": {}
+}
