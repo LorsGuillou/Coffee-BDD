@@ -2,8 +2,10 @@
 
 require ('vendor/autoload.php');
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
+if ($_SERVER['HTTP_HOST'] != 'https://coffee-k6-lg.herokuapp.com/') {
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    $dotenv->load();
+}
 
 echo 'Hello World !' . '<br>';
 
