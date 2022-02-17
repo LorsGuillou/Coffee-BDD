@@ -1,12 +1,11 @@
 <?php
+    require_once 'bdd.php';
+    $bdd = bdd();
 
-echo 'Hello World !';
+echo 'Hello World !' . '<br>';
 
-$bdd = new PDO("mysql:dbname=abclight;host=localhost", "root", "");
+$waiters = waiters();
 
-$req = $bdd->query("SELECT name FROM waiter");
-
-$waiters = $req->fetchAll();
-
-var_dump($waiters);
-
+foreach($waiters as $waiter) {
+    echo $waiter['name'] . '<br>';
+}
