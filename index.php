@@ -2,7 +2,7 @@
 
 require ('vendor/autoload.php');
 
-if ($_SERVER['HTTP_HOST'] != 'https://coffee-k6-lg.herokuapp.com/') {
+if ($_SERVER['HTTP_HOST'] != 'coffee-k6-lg.herokuapp.com') {
     $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
     $dotenv->load();
 }
