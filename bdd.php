@@ -2,7 +2,7 @@
 
 function bdd() {
     try {
-        $bdd = new PDO("mysql:dbname=abclight;host=mysql-69239-0.cloudclusters.net:10521;charset=utf8", "admin", "zerzLA7A");
+        $bdd = new PDO("mysql:dbname=abclight;host=mysql-69239-0.cloudclusters.net:1052;charset=utf8", "admin", "zerzLA7A");
     } catch(PDOException $e) {
         echo "Connexion impossible : " . $e->getMessage();
     }
