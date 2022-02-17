@@ -25,3 +25,12 @@ $waiters = $execQuery->fetchAll();
 foreach ($waiters as $waiter) {
     print $waiter['name'] . '<br>';
 }
+
+$edibleQuery = 'SELECT * FROM edible';
+$execEdible = $pdo->query($edibleQuery);
+
+$edibles = $execEdible->fetchAll();
+
+foreach ($edibles as $edible) {
+    print $edible['name'] . ' - ' . $edible['price'] . '€<br>';
+}
